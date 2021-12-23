@@ -242,6 +242,7 @@ public class Speech extends CordovaPlugin {
     }
 
     private void initRecognition(String language, CallbackContext callbackContext) {
+        this.sttCallbackContext = callbackContext;
         if (!language.isEmpty()) {
             this.selectedLanguage = language;
         }
